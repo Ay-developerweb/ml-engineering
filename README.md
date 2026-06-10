@@ -12,8 +12,9 @@ Built as part of a deliberate ML engineering learning arc — structured like a 
 |---|---|---|
 | Baseline (predict mean) | $90,222 | -0.015 |
 | Linear Regression | $32,260 | 0.870 |
-| Ridge Regression | $32,229 | 0.870 |
-| **Random Forest** | **$25,347** | **0.920** |
+| Ridge Regression | $32,228 | 0.871 |
+| Random Forest (default) | $25,438 | 0.919 |
+| **Random Forest (tuned — GridSearchCV)** | **$26,034** | **0.916** |
 
 The Random Forest model explains **92% of variance** in house prices with a mean error of ~$25k across a price range of $50k–$600k+.
 
@@ -114,10 +115,10 @@ Created 6 new features from domain reasoning:
 ---
 
 ## Next Steps
-- [ ] Hyperparameter tuning with `GridSearchCV`
+- [x] Hyperparameter tuning with `GridSearchCV`
+- [x] Export trained model with `joblib` for serving
 - [ ] Try XGBoost and compare against Random Forest
 - [ ] Log-transform `SalePrice` to handle right skew
-- [ ] Export trained model with `joblib` for serving
 
 ---
 
