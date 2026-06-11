@@ -6,6 +6,13 @@ Built as part of a deliberate ML engineering learning arc — structured like a 
 
 ---
 
+## Live API
+**Deployed:** https://house-price-api-iaom.onrender.com  
+**Docs:** https://house-price-api-iaom.onrender.com/docs  
+**Health:** https://house-price-api-iaom.onrender.com/health
+
+---
+
 ## Results
 
 | Model | RMSE | R² |
